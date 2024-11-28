@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <title>HealthCare-page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div>
+        <nav class="section__container nav__container">
+            <div class="nav__health">
                 Health
                 <span>Care</span>
             </div>
-            <ul>
-                <li>
+            <ul class="nav__links">
+                <li class="links">
                     <a href="#home">Home</a>
                 </li>
-                <li>
+                <li class="links">
                     <a href="#about">About Us</a>
                 </li>
-                <li>
+                <li class="links">
                     <a href="#services">Services</a>
                 </li>
-                <li>
+                <li class="links">
                     <a href="#pages">Pages</a>
                 </li>
-                <li>
+                <li class="links">
                     <a href="#blog">Blog</a>
                 </li>
             </ul>
-            <button>Contact Us</button>
+            <button class="btn">Contact Us</button>
         </nav>
         <!--------- Home ----------->
         <div>
@@ -48,51 +50,56 @@
     </div>
     </header>
     <!--------Services------------>
-    <section>
-        <div> 
-            <div>
-                <h2>Our Special service</h2>
+    <section class="section__container service__container" id="service">
+        <div class="service__header"> 
+            <div class="service__content">
+                <h2 class="section__title">Our Special service</h2>
                 <p>Beyond simply providing medical care, our commitment lies in delivering unparalleled service tailored to your unique needs.</p>
             </div>
-            <button>Ask A Service</button>
+            <button class="service__btn">Ask A Service</button>
         </div>
         <!-------- Cards ------->
-        <div>
+        <div service__cards>
             <!----------Card 1 ---------->
-            <div>
+            <div class="service__cards">
                 <span>
-                    <i></i>
+                    <i class="laboratoty__test">
+                        ::before
+                    </i>
                 </span>
                 <h4>Laboratory Test</h4>
                 <p>Accurate Diagnostics, Swift Results: Experience top-notch Laboratory Testing at our facility.</p>
                 <a href="#">Learn More</a>
             </div>
             <!-----------Card 2 ----------->
-            <div>
+            <div class="service__cards">
                 <span>
-                    <i></i>
+                    <i class="health__check">
+                        ::before
+                    </i>
                 </span>
                 <h4>Health Check</h4>
                 <p>Our thorough assessments and expert evaluations help you stay proactive about your health.</p>
                 <a href="#">Learn More</a>
             </div>
             <!-----------Card 3 ----------->
-            <div>
+            <div class="service__cards">
                 <span>
-                    <i></i>
+                    <i class="hospital">
+                        ::before
+                    </i>
                 </span>
                 <h4>General Dentistry</h4>
                 <p>Experience comprehensive oral care with Dentistry. Trust us to keep your smile healthy and bright.</p>
-                <a href="#">Learn More
-                </a>
+                <a href="#">Learn More</a>
             </div>
         </div>
     </section>
     <!---------About us ---------->
-    <section>
+    <section class="section__container about__container" id="aboutUs">
         <!-- Information -->
-        <div>
-            <h2>About Us</h2>
+        <div class="about__information">
+            <h2 class="section__title">About Us</h2>
             <p>Welcome to our healthcare website, your one-stop destination for reliable and comprehensive health care information. We are committed to promoting wellness and providing valuable resources to empower you on your health journey.</p>
 
             <p>Explore our extensive collection of expertly written articles and guides covering a wide range of health topics. From understanding common medical conditions to tips for maintaining a healthy lifestyle, our content is designed to educate, inspire, and support you in making informed choices for your health.</p>
@@ -100,35 +107,41 @@
             <p>Discover practical health tips and lifestyle advice to optimize your physical and mental well-being. We believe that small changes can lead to significant improvements in your quality of life, and we're here to guide you on your path to a healthier and happier you.</p>
         </div>
         <!-------- image --------->
-        <div>
+        <div class="about__image">
             <img src="img/about.jpg" alt="">
         </div>
     </section>
     <!--------- Blog ---------->
-    <section>
-        <div>
-            <img src="img/choose-us.jpg" alt="">
+    <section class="section__container blog__container" id="blog">
+        <div class="blog__image">
+            <img src="img/choose-us.jpg" alt="why choose us">
         </div>
-        <div>
-            <h2>Why Choose Us</h2>
+        <div class="blog__content">
+            <h2 class="section__title">Why Choose Us</h2>
             <p>With a steadfast commitment to your well-being, our team of highly trained healthcare professionals ensures that you receive nothing short of exceptional patient experiences.</p>
-            <div>
+            <div class="why__section">
                 <span>
-                    <i></i>
+                    <i class="hand__heart">
+                        ::before
+                    </i>
                 </span>
                 <div>
                     <h4>Intensive Care</h4>
                     <p>Our Intensive Care Unit is equipped with advanced technology and staffed by team of professionals</p>
                 </div>
                 <span>
-                    <i></i>
+                    <i class="ambulance__car">
+                        ::before
+                    </i>
                 </span>
                 <div>
                     <h4>Free Ambulance Car</h4>
                     <p>A compassionate initiative to prioritize your health and well-being without any financial burden.</p>
                 </div>
                 <span>
-                    <i></i>
+                    <i class="hospital__icon">
+                        ::before
+                    </i>
                 </span>
                 <div>
                     <h4>Medical and Surgical</h4>
@@ -138,42 +151,45 @@
         </div>
     </section>
     <!--------- Pages ---------->
-    <section>
+    <section class="section__container pages__container" id="pages">
         <!---------- Doctors ----------->
-        <div> 
-            <div>
-                <h2>Our Special Doctors</h2>
+        <div class="doctors__head"> 
+            <div class="doctors__head__content">
+                <h2 class="section__title">Our Special Doctors</h2>
                 <p>We take pride in our exceptional team of doctors, each a specialist in their respective fields.</p>
             </div>
-            <div>
+            <div class="doctors__nav">
                 <span>
-                    <i></i>
+                    <i class="arrow__left"></i>
                 </span>
                 <span>
-                    <i></i>
+                    <i class="arrow__right"></i>
                 </span>
             </div>
         </div>
-        <div>
+        <div class="doctors__images">
             <!---------- Doctor 1 ----------->
-            <div>
-                <div>
+            <div class="doctor__card">
+                <div class="doctor__card__image
+                ">
                     <img src="img/doctor-1.jpg" alt="">
                 </div>
                 <h4>Dr. Emily Smith</h4>
                 <p>Cardiologist</p>
             </div>
             <!---------- Doctor 2 ----------->
-            <div>
-                <div>
+            <div class="doctor__card">
+                <div class="doctor__card__image
+                ">
                     <img src="img/doctor-2.jpg" alt="">
                 </div>
                 <h4>Dr. James Anderson</h4>
                 <p>Neurosurgeon</p>
             </div>
             <!---------- Doctor 3 ----------->
-            <div>
-                <div>
+            <div class="doctor__card">
+                <div class="doctor__card__image
+                ">
                     <img src="img/doctor-3.jpg" alt="">
                 </div>
                 <h4>Dr. Michael Lee</h4>
@@ -181,8 +197,8 @@
             </div>
         </div>
     </section>  
-    <footer>
-        <div>
+    <footer class="footer">
+        <div class="section__container foot__container">
             <!---------- HealthCare --------->
             <div>
                 <h2>
@@ -228,22 +244,30 @@
             </div>
         </div>
         <!---------- Copyright ----------->
-        <div>
-            <div>
+        <div class="footer__bar">
+            <div class="footer__bar__content">
                 <p>Copyright © 2024 HealthCare page. All rights reserved.</p>
                 <!--------- Socials ---------->
-                <div>
+                <div footer__socials>
                     <span>
-                        <i></i>
+                        <i class="instagram__icon">
+                            ::before
+                        </i>
                     </span>
                     <span>
-                        <i></i>
+                        <i class="facebook__icon">
+                            ::before
+                        </i>
                     </span>
                     <span>
-                        <i></i>
+                        <i class="heart__icon">
+                            ::before
+                        </i>
                     </span>
                     <span>
-                        <i></i>
+                        <i class="twitter__icon">
+                            ::before
+                        </i>
                     </span>
                   </div>
             </div>
