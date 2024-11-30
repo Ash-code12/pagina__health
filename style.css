@@ -308,10 +308,10 @@ padding: 8px; /* separación entre items */
   align-items: center;
 }
 
-.blog__image{
-  max-width: 50%;
+.blog__image img{
+  max-width: 400px;
+  margin: auto;
   border-radius: 10px;
-  margin-right: 10px;
 }
 
 .blog__content p{
@@ -359,6 +359,11 @@ padding: 8px; /* separación entre items */
   max-width: 600px;
 }
 
+.doctors__head__content p{
+  color: var(--texto-claro);
+  max-width: 600px;
+}
+
 /*--------flechas--------- */
 
 .doctors__nav{
@@ -398,15 +403,129 @@ padding: 8px; /* separación entre items */
 }
 
 
-.doctors__card h4 {
+.doctor__card h4 {
   color: var(--texto-oscuro);
   margin-top: 16px;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.doctors__card p {
+.doctor__card p {
   color: var(--texto-claro);
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
+img{
+  width: 100%;
+  display: flex;
+}
+
+ /* -----------iconos redes------------ */
+
+.doctor__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: 0.5s;
+  width: 100%;
+  position: absolute;
+  bottom: -4rem;
+  left: 0;
+}
+
+.doctor__socials span{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: var(--white);
+  color: var(--texto-oscuro);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+.doctor__socials span:hover{
+  color: var(--color-primario);
+}
+
+.doctor__card:hover  
+.doctor__socials{
+  bottom: 2rem;
+}
+
+/*-----------footer--------------- */
+
+.footer{
+  background-color: var(--color-primario-claro);
+}
+
+.foot__container{
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+}
+
+
+.foot__section h3{
+  color: var(--color-primario);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.foot__section h2 span{
+  color: var(--color-secundario);
+}
+
+.foot__section h2{
+  color: var(--color-primario);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.foot__section p{
+  color: var(--texto-oscuro);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 1rem;
+}
+
+.foot__section p:hover{
+  color: var(--color-primario);
+}
+
+.foot__section i{
+  color: var(--color-primario);
+}
+
+.footer__bar {
+  background-color: var(--color-primario);
+}
+
+.footer__bar__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer__bar__content p {
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
+/* -----------iconos redes footer-------- */
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: var(--white);
+  cursor: pointer;
+}
